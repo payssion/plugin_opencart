@@ -38,6 +38,3 @@ class ModelPaymentPayssion extends Model {
 	}
 }
 
-
-//curl -d "app_name=newapi&pm_id=cashu&transaction_id=F512008557284736&track_id=14&sub_track_id=&amount=254.40&currency=USD&paid=0.00&state=completed&notify_sig=a348a87ed7807002aa8b158e265d6a32" "http://localhost/opencart2/index.php?route=payment/payssion/notify"
-
