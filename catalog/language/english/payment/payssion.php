@@ -4,6 +4,8 @@ $_['heading_title']				= 'Thank you for shopping with %s .... ';
 
 // Text
 $_['text_title']				= 'Payssion';
+$_['text_title_poliau']		    = 'Australia bank transfer';
+$_['text_title_polinz']		    = 'New Zealand bank transfer';
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
 $_['text_success_wait']			= '<b><span style="color: #FF0000">Please wait...</span></b> while we finish processing your order.<br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>.';

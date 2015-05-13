@@ -154,10 +154,11 @@ class ControllerPaymentPayssion extends Controller {
 
 		$data['order_statuses'] = $this->model_localisation_order_status->getOrderStatuses();
 
-		if (isset($this->request->post['payssion_geo_zone_id'])) {
-			$data['payssion_geo_zone_id'] = $this->request->post['payssion_geo_zone_id'];
+		$geo_zone_id = $id . '_geo_zone_id';
+		if (isset($this->request->post[$geo_zone_id])) {
+			$data[$geo_zone_id] = $this->request->post[$geo_zone_id];
 		} else {
-			$data['payssion_geo_zone_id'] = $this->config->get('payssion_geo_zone_id');
+			$data[$geo_zone_id] = $this->config->get($geo_zone_id);
 		}
 
 		$this->load->model('localisation/geo_zone');

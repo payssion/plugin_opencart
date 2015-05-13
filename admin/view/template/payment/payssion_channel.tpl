@@ -26,6 +26,22 @@
       <div class="panel-body">
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-payssion" class="form-horizontal">
           <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-geo-zone"><?php echo $entry_geo_zone; ?></label>
+            <div class="col-sm-10">
+              <select name="<?php echo $pm; ?>_geo_zone_id" id="input-geo-zone" class="form-control">
+                <option value="0"><?php echo $text_all_zones; ?></option>
+                <?php foreach ($geo_zones as $geo_zone) { ?>
+                <?php $geo_zone_id = $pm . '_geo_zone_id'; 
+                if ($geo_zone['geo_zone_id'] == $$geo_zone_id) { ?>
+                <option value="<?php echo $geo_zone['geo_zone_id']; ?>" selected="selected"><?php echo $geo_zone['name']; ?></option>
+                <?php } else { ?>
+                <option value="<?php echo $geo_zone['geo_zone_id']; ?>"><?php echo $geo_zone['name']; ?></option>
+                <?php } ?>
+                <?php } ?>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
             <label class="col-sm-2 control-label" for="input-status"><?php echo $entry_status; ?></label>
             <div class="col-sm-10">
               <select name="<?php echo $pm; ?>_status" id="input-status" class="form-control">

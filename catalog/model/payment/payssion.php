@@ -6,10 +6,15 @@ class ModelPaymentPayssion extends Model {
 		$class_name = get_class($this);
 		$index = strrpos($class_name, 'Payssion');
 		$id = strtolower(substr($class_name, $index));
+		
+		$title = $this->language->get("text_title_");
 		$channel = false;
 		if (strlen($class_name) - $index > 8) {
 			$channel = true;
-			$title = substr($class_name, $index + 8) . ' (Payssion)';
+			$pm = substr($class_name, $index + 8);
+			$key = "text_title_" . strtolower($pm);
+			$title = $this->language->get($key);
+			$title = ($title && $title != $key ? $title : $pm) . ' (Payssion)';
 		}
 		
 		if ($channel && $this->config->get($id . '_status')) {
