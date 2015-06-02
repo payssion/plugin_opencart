@@ -1,4 +1,4 @@
-<form action="<?php echo $action; ?>" method="post">
+<form action="<?php echo $action; ?>" method="post" target="_blank">
   <input type="hidden" name="api_key" value="<?php echo $api_key; ?>" />
   <input type="hidden" name="api_sig" value="<?php echo $api_sig; ?>" />
   <input type="hidden" name="pm_id" value="<?php echo $pm_id; ?>" />

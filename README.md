@@ -2,6 +2,7 @@ Payssion opencart extension
 =================
 
 <h3>Getting Started</h3>
+This extension is for opencart 2.0.x
 
 <h4>Installation</h4>
 
