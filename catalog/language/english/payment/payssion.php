@@ -12,7 +12,7 @@ $_['text_title_santandermx']		    = 'Santander Mexico';
 $_['text_title_banktransferjp']		= '銀行振込 Bank Transfer';
 $_['text_title_konbinijp']		    = 'コンビニ Convenience Store Payment (Konbini)';
 $_['text_title_payeasyjp']		    = 'ペイジー PayEasy';
-$_['text_title_webmoneyjp']		    = 'WebMoney';
+$_['text_title_webmoneyjp']		    = 'WebMoney Japan';
 
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
