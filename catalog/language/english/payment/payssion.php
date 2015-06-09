@@ -13,6 +13,7 @@ $_['text_title_banktransferjp']		= '銀行振込 Bank Transfer';
 $_['text_title_konbinijp']		    = 'コンビニ Convenience Store Payment (Konbini)';
 $_['text_title_payeasyjp']		    = 'ペイジー PayEasy';
 $_['text_title_webmoneyjp']		    = 'WebMoney Japan';
+$_['text_title_openbucks']		    = 'Pay with Gift Cards using Openbucks';
 
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
