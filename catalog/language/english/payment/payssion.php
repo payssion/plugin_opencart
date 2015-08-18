@@ -14,6 +14,7 @@ $_['text_title_konbinijp']		    = 'コンビニ Convenience Store Payment (Konbi
 $_['text_title_payeasyjp']		    = 'ペイジー PayEasy';
 $_['text_title_webmoneyjp']		    = 'WebMoney Japan';
 $_['text_title_openbucks']		    = 'Pay with Gift Cards using Openbucks';
+$_['text_title_trustpay']		    = 'European bank transfer';
 
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
