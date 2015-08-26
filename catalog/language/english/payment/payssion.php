@@ -16,6 +16,26 @@ $_['text_title_webmoneyjp']		    = 'WebMoney Japan';
 $_['text_title_openbucks']		    = 'Pay with Gift Cards using Openbucks';
 $_['text_title_trustpay']		    = 'European bank transfer';
 
+$_['fpx']		    = 'MyClear FPX';
+$_['maybank2u']		= 'Maybank2u';
+$_['cimb']		    = 'CIMB Clicks';
+$_['rhb']		    = 'RHB Now';
+$_['amb']		    = 'Am Online';
+$_['hlb']		    = 'Hong Leong Connect';
+$_['affinepg']		= 'Affin Bank';
+$_['webcash']		= 'Webcash';
+$_['mobilemoney']   = 'Mobile Money';
+$_['7eleven']		= '7­eleven Malaysia';
+$_['epay']		    = 'epay';
+$_['senheng']		= 'Senheng/SenQ';
+$_['paylink']	    = 'PayQuik/Paylink';
+$_['esapay']		= 'Esapay';
+$_['enets']		    = 'eNETS Debit';
+$_['singpost']	    = 'SAM by SingPost';
+$_['dragonpay']		= 'Dragonpay';
+$_['nganluong']		= 'Nganluong';
+$_['atmva']		    = 'Indonesia ATM Network Transfer Virtual Account';
+
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
 $_['text_success_wait']			= '<b><span style="color: #FF0000">Please wait...</span></b> while we finish processing your order.<br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>.';
