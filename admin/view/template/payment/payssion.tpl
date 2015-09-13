@@ -66,12 +66,6 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-total"><span data-toggle="tooltip" title="<?php echo $help_total; ?>"><?php echo $entry_total; ?></span></label>
-            <div class="col-sm-10">
-              <input type="text" name="payssion_total" value="<?php echo $payssion_total; ?>" placeholder="<?php echo $entry_total; ?>" id="input-total" class="form-control" />
-            </div>
-          </div>
-          <div class="form-group">
             <label class="col-sm-2 control-label" for="input-order-status"><?php echo $entry_order_status; ?></label>
             <div class="col-sm-10">
               <select name="payssion_order_status_id" id="input-order-status" class="form-control">

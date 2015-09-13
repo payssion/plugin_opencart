@@ -35,14 +35,12 @@ class ControllerPaymentPayssion extends Controller {
 		$data['text_all_zones'] = $this->language->get('text_all_zones');
 		$data['text_yes'] = $this->language->get('text_yes');
 		$data['text_no'] = $this->language->get('text_no');
-		$data['text_successful'] = $this->language->get('text_successful');
-		$data['text_declined'] = $this->language->get('text_declined');
-		$data['text_off'] = $this->language->get('text_off');
+		$data['text_testmode_on'] = $this->language->get('text_testmode_on');
+		$data['text_testmode_off'] = $this->language->get('text_testmode_off');
 
 		$data['entry_apikey'] = $this->language->get('entry_apikey');
 		$data['entry_secretkey'] = $this->language->get('entry_secretkey');
 		$data['entry_test'] = $this->language->get('entry_test');
-		$data['entry_total'] = $this->language->get('entry_total');
 		$data['entry_order_status'] = $this->language->get('entry_order_status');
 		$data['entry_pending_status'] = $this->language->get('entry_pending_status');
 		$data['entry_canceled_status'] = $this->language->get('entry_canceled_status');
@@ -52,7 +50,6 @@ class ControllerPaymentPayssion extends Controller {
 		$data['entry_status'] = $this->language->get('entry_status');
 		$data['entry_sort_order'] = $this->language->get('entry_sort_order');
 
-		$data['help_total'] = $this->language->get('help_total');
 
 		$data['button_save'] = $this->language->get('button_save');
 		$data['button_cancel'] = $this->language->get('button_cancel');
