@@ -12,7 +12,7 @@ Copy over _<b>admin</b>_, _<b>catalog</b>_ folders to your Opencart root.
 
 1. Go to Extentions > Payments and `install` **Payssion** first, then Afterwards you can click `edit` to enter your configuration.
 
-2. Fill in API Key and Secret Key which you can find at your Payssion account, and select the proper status for the fields of `Order Status`, `Pending Status`, `Canceled Status`, `Failed Status` and `Chargeback Status`, which you can refer to the following:
+2. Fill in API Key and Secret Key which you can find at your Payssion account, select the proper status for the fields of `Order Status`, `Pending Status`, `Canceled Status`, `Failed Status` and `Chargeback Status` and click `Save` button. Regarding the status, you can refer to the following:
 
 ![Payssion opencart status setting](https://www.payssion.com/static/images/opencart_status_setting.png)
 
