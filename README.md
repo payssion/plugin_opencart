@@ -11,6 +11,9 @@ Copy over _<b>admin</b>_, _<b>catalog</b>_ folders to your Opencart root.
 <h4>Setup</h4>
 
 1. Go to Extentions > Payments and `install` **Payssion** first, then Afterwards you can click `edit` to enter your configuration.
-You can find your API Key and Secret Key after logging at your Payssion account.
 
-2. Activate the alternative payment methods you want to use. Take `paysafecard` for example. Click `edit` after installing `paysafecard (via Payssion)`, then select `Enabled` for the **Status** option, and click `Save` button. 
+2. Fill in API Key and Secret Key which you can find at your Payssion account, and select the proper status for the fields of `Order Status`, `Pending Status`, `Canceled Status`, `Failed Status` and `Chargeback Status`, which you can refer to the following:
+
+![Payssion opencart status setting](https://www.payssion.com/static/images/opencart_status_setting.png)
+
+3. Activate the alternative payment methods you want to use. Take `paysafecard` for example. Click `edit` after installing `paysafecard (via Payssion)`, then select `Enabled` for the **Status** option, and click `Save` button. 
