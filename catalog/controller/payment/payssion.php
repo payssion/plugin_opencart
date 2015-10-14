@@ -14,6 +14,7 @@ class ControllerPaymentPayssion extends Controller {
 			$data['action'] = 'http://sandbox.payssion.com/payment/create.html';
 		}
 
+		$data['source'] = 'opencart';
 		$data['pm_id'] = $this->pm_id;
 		$data['api_key'] = $this->config->get('payssion_apikey');
 		$data['track_id'] = $order_info['order_id'];
