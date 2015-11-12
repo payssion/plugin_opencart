@@ -37,6 +37,7 @@ $_['text_title_molpay']		= 'MOLPay';
 $_['text_title_yandexmoney']		= 'Yandex.Money';
 $_['text_title_giropayde']		= 'Giropay';
 $_['text_title_idealnl']		= 'iDEAL';
+$_['text_title_bitcoin']		= 'Bitcoin';
 
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
