@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-password"><span data-toggle="tooltip" title="<?php echo $help_password; ?>"><?php echo $entry_secretkey; ?></span></label>
+            <label class="col-sm-2 control-label" for="input-password"><?php echo $entry_secretkey; ?></label>
             <div class="col-sm-10">
               <input type="text" name="payssion_secretkey" value="<?php echo $payssion_secretkey; ?>" placeholder="<?php echo $entry_secretkey; ?>" id="input-password" class="form-control" />
               <?php if ($error_secretkey) { ?>
