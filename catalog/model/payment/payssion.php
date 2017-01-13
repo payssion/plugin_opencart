@@ -18,8 +18,9 @@ class ModelPaymentPayssion extends Model {
 		}
 		
 		if ($channel && $this->config->get($id . '_status')) {
-			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . (int)$this->config->get('payssion_geo_zone_id') . "' AND country_id = '" . (int)$address['country_id'] . "' AND (zone_id = '" . (int)$address['zone_id'] . "' OR zone_id = '0')");
-			if (!$this->config->get('payssion_geo_zone_id')) {
+			$geo_zone_id = $id . '_geo_zone_id';
+			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . (int)$this->config->get($geo_zone_id) . "' AND country_id = '" . (int)$address['country_id'] . "' AND (zone_id = '" . (int)$address['zone_id'] . "' OR zone_id = '0')");
+			if (!$this->config->get($geo_zone_id)) {
 				$status = TRUE;
 			} elseif ($query->num_rows) {
 				$status = TRUE;
