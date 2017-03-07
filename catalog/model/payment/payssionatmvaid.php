@@ -1,5 +1,5 @@
 <?php
 
 require_once(realpath(dirname(__FILE__)) . "/payssion.php");
-class ModelPaymentPayssionATMVAmy extends ModelPaymentPayssion {
+class ModelPaymentPayssionATMVAid extends ModelPaymentPayssion {
 }
