@@ -43,6 +43,8 @@ $_['text_title_redcompracl']    = 'Redcompra';
 $_['text_title_dotpay']    = 'Dotpay Poland';
 $_['text_title_alipaycn']    = 'Alipay';
 $_['text_title_webpaycl']    = 'WebPay plus Chile';
+$_['text_title_webmoney']    = 'Webmoney';
+$_['text_title_sberbankru']    = 'Sberbank Russia';
 
 
 $_['text_response']				= '';
