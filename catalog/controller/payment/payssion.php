@@ -34,9 +34,9 @@ class ControllerPaymentPayssion extends Controller {
 		//$data['telephone'] = $order_info['telephone'];
 		$data['payer_email'] = $order_info['email'];
 		
-		$data['notify_url'] = $this->url->link('payment/payssion/notify');
-		$data['success_url'] = $this->url->link('payment/payssion/callback');
-		$data['redirect_url'] = $this->url->link('payment/payssion/callback');
+		$data['notify_url'] = $this->url->link('payment/payssion/notify', '', true);
+		$data['success_url'] = $this->url->link('payment/payssion/callback', '', true);
+		$data['redirect_url'] = $this->url->link('payment/payssion/callback', '', true);
 
 		$data['api_sig'] = $this->generateSignature($data, $this->config->get('payssion_secretkey'));
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/payssion.tpl')) {
