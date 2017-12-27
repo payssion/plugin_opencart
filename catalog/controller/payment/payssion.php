@@ -42,13 +42,13 @@ class ControllerPaymentPayssion extends Controller {
 		
 		$version_oc = substr(VERSION, 0, 3);
 		if ($version_oc == "2.2") {
+			return $this->load->view('payment/payssion.tpl', $data);
+		} else {
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/payssion.tpl')) {
 				return $this->load->view($this->config->get('config_template') . '/template/payment/payssion.tpl', $data);
 			} else {
 				return $this->load->view('default/template/payment/payssion.tpl', $data);
 			}
-		} else {
-			return $this->load->view('payment/payssion.tpl', $data);
 		}
 	}
 	
