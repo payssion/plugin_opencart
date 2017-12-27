@@ -39,10 +39,16 @@ class ControllerPaymentPayssion extends Controller {
 		$data['redirect_url'] = $this->url->link('payment/payssion/callback', '', true);
 
 		$data['api_sig'] = $this->generateSignature($data, $this->config->get('payssion_secretkey'));
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/payssion.tpl')) {
-			return $this->load->view($this->config->get('config_template') . '/template/payment/payssion.tpl', $data);
+		
+		$version_oc = substr(VERSION, 0, 3);
+		if ($version_oc == "2.2") {
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/payssion.tpl')) {
+				return $this->load->view($this->config->get('config_template') . '/template/payment/payssion.tpl', $data);
+			} else {
+				return $this->load->view('default/template/payment/payssion.tpl', $data);
+			}
 		} else {
-			return $this->load->view('default/template/payment/payssion.tpl', $data);
+			return $this->load->view('payment/payssion.tpl', $data);
 		}
 	}
 	
