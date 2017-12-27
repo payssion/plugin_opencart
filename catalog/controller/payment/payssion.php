@@ -40,16 +40,7 @@ class ControllerPaymentPayssion extends Controller {
 
 		$data['api_sig'] = $this->generateSignature($data, $this->config->get('payssion_secretkey'));
 		
-		$version_oc = substr(VERSION, 0, 3);
-		if ($version_oc == "2.2") {
-			return $this->load->view('payment/payssion.tpl', $data);
-		} else {
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/payssion.tpl')) {
-				return $this->load->view($this->config->get('config_template') . '/template/payment/payssion.tpl', $data);
-			} else {
-				return $this->load->view('default/template/payment/payssion.tpl', $data);
-			}
-		}
+		return $this->getView('payssion', $data);
 	}
 	
 	private function generateSignature(&$req, $secretKey) {
@@ -81,6 +72,7 @@ class ControllerPaymentPayssion extends Controller {
 		$data['text_failure'] = $this->language->get('text_failure');
 		$data['text_failure_wait'] = sprintf($this->language->get('text_failure_wait'), $this->url->link('checkout/checkout', '', 'SSL'));
 	
+		$version_oc = substr(VERSION, 0, 3);
 		if (isset($this->request->post['state']) && $this->request->post['state'] == 'complete') {
 			$message = '';
 				
@@ -117,22 +109,27 @@ class ControllerPaymentPayssion extends Controller {
 			$this->model_checkout_order->addOrderHistory($track_id, $this->config->get('payssion_order_status_id'), $message, false);
 				
 			$data['continue'] = $this->url->link('checkout/success');
-				
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/payssion_success.tpl')) {
-				$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/payment/payssion_success.tpl', $data));
-			} else {
-				$this->response->setOutput($this->load->view('default/template/payment/payssion_success.tpl', $data));
-			}
+			
+			$this->response->setOutput($this->getView('payssion_success', $data));
 		} else {
 			$data['continue'] = $this->url->link('checkout/cart');
 				
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/payssion_failure.tpl')) {
-				$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/payment/payssion_failure.tpl', $data));
-			} else {
-				$this->response->setOutput($this->load->view('default/template/payment/payssion_failure.tpl', $data));
-			}
+			$this->response->setOutput($this->getView('payssion_failure', $data));
 		}
 		
+	}
+	
+	protected function getView($name, $data) {
+		$version_oc = substr(VERSION, 0, 3);
+		if ($version_oc == "2.2") {
+			return $this->load->view("payment/$name.tpl", $data);
+		} else {
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . "/template/payment/$name.tpl")) {
+				return $this->load->view($this->config->get('config_template') . "/template/payment/$name.tpl", $data);
+			} else {
+				return $this->load->view("default/template/payment/$name.tpl", $data);
+			}
+		}
 	}
 
 	public function notify() {
