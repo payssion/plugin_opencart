@@ -45,6 +45,7 @@ $_['text_title_alipaycn']    = 'Alipay';
 $_['text_title_webpaycl']    = 'WebPay plus Chile';
 $_['text_title_webmoney']    = 'Webmoney';
 $_['text_title_sberbankru']    = 'Sberbank Russia';
+$_['text_title_boacompra']    = 'Boacompra';
 
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
