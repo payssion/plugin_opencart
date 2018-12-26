@@ -47,6 +47,7 @@ $_['text_title_webmoney']    = 'Webmoney';
 $_['text_title_sberbankru']    = 'Sberbank Russia';
 $_['text_title_boacompra']    = 'Boacompra';
 $_['text_title_tenpaycn']    = 'Wechat Pay';
+$_['text_title_bankcardtr']    = 'Turkish Credit/Bank Card';
 
 
 $_['text_response']				= '';
