@@ -48,6 +48,10 @@ $_['text_title_sberbankru']    = 'Sberbank Russia';
 $_['text_title_boacompra']    = 'Boacompra';
 $_['text_title_tenpaycn']    = 'Wechat Pay';
 $_['text_title_bankcardtr']    = 'Turkish Credit/Bank Card';
+$_['text_title_blikpl']    = 'BLIK';
+$_['text_title_epsat']    = 'EPS';
+$_['text_title_multibancopt']    = 'Multibanco';
+$_['text_title_p24pl']    = 'Przelewy24';
 
 $_['text_response']				= '';
 $_['text_success']				= '... your payment was successfully received.';
